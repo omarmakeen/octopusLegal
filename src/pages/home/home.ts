@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { AppLoader } from '../../shared/appLoader'
+
 /*
   Generated class for the Home page.
 
@@ -13,10 +15,12 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loaderCtrl: AppLoader) { }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
+    // this.loaderCtrl.startLoader('loading');
+
   }
 
 }
